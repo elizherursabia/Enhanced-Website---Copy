@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!---CSS-->
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <!---ICONS-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+  <title>Home</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="navigation">
+
+      <ul>
+
+        <li>         
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="trash-outline"></ion-icon>
+            </span>
+
+            <span class="title">E-Collect</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-section="content-home">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+
+            <span class="title">Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-section="content-dashboard">
+            <span class="icon">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </span>
+
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-section="content-profile">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+
+            <span class="title">Profile</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-section="content-notifications">
+            <span class="icon">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </span>
+
+            <span class="title">Notifications</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-section="content-settings">
+            <span class="icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </span>
+
+            <span class="title">Settings</span>
+          </a>
+        </li>
+
+        <li id="logout">
+          <a href="#">
+            <span class="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+
+            <span class="title">Log Out</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!---TOP BAR-->
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
+        <div class="user">
+          <img src="assets/images/E-Collect_LOGO.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!---HOME-->
+    <div class="section-content" id="content-home" style="display: none;">
+    
+      <p>THIS IS HOME</p>
+
+    </div>
+
+    <!---DASHBOARD-->
+    <div class="section-content" id="content-dashboard" style="display: none;">
+    
+      <div class="cardBox">
+
+        <div class="cardTotal">
+          <div>
+            <div class="numbers">Total Balance</div>
+            <div class="cardName">Daily Views</div>
+          </div>
+
+          <div class="iconBx">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="details">
+
+        <div class="recentOrders">
+
+          <div class="cardHeader">
+            <h2>Transaction History</h2>
+            <a href="#" class="btn">View All</a>
+          </div>
+
+          <table>
+
+            <thead>
+              <tr>
+                <td>E-Waste</td>
+                <td></td>
+                <td>Date</td>
+                <td>Transaction</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Mobile Phone</td>
+                <td>Adapter</td>
+                <td>04/15/24</td>
+                <td><span class="status delivered">+PHP150</span></td>
+              </tr>
+
+              <tr>
+                <td>Mouse</td>
+                <td>Mobile Phone</td>
+                <td>04/19/24</td>
+                <td><span class="status pending">+PHP300</span></td>
+              </tr>
+
+              <tr>
+                <td>Remote</td>
+                <td>Adapter</td>
+                <td>04/29/24</td>
+                <td><span class="status return">+PHP70</span></td>
+              </tr>
+
+              <tr>
+                <td>Adapter</td>
+                <td>Remote</td>
+                <td>05/1/24</td>
+                <td><span class="status inProgress">+PHP200</span></td>
+              </tr>
+
+              <tr>
+                <td>Mobile Phone</td>
+                <td>Mouse</td>
+                <td>05/03/24</td>
+                <td><span class="status delivered">+PHP100</span></td>
+              </tr>
+
+              <tr>
+                <td>Adapter</td>
+                <td>Mouse</td>
+                <td>05/06/24</td>
+                <td><span class="status pending">+PHP80</span></td>
+              </tr>
+
+              <tr>
+                <td>Remote</td>
+                <td>Mouse</td>
+                <td>05/07/24</td>
+                <td><span class="status return">+PHP80</span></td>
+              </tr>
+
+              <tr>
+                <td>Mobile Phone</td>
+                <td>Adapter</td>
+                <td>05/10/24</td>
+                <td><span class="status inProgress">+PHP200</span></td>
+              </tr>
+            </tbody>
+         </table>
+       </div>
+
+       <div class="recentCustomers">
+
+        <div class="cardHeader">
+          <h2>Cash-outs</h2>
+        </div>
+
+        <table>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP150<br> <span>04/20/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP150<br> <span>04/27/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP50<br> <span>05/04/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP200<br> <span>05/07/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP150<br> <span>05/10/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP150<br> <span>05/15/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP100<br> <span>05/22/2024</span></h4>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="60px">
+              <div class="imgBx">
+                <ion-icon name="cash-outline"></ion-icon>
+              </div>
+            </td>
+
+            <td>
+              <h4>-PHP100<br> <span>05/28/2024</span></h4>
+            </td>
+          </tr>
+        </table>
+       </div>
+      </div>
+    </div>
+
+    <!---Profile-->
+    <div class="section-content" id="content-profile" style="display: none;">
+    
+      <body>
+        <div class="container-profile">
+            <h1 class="text-primary">Edit Profile</h1>
+            <hr width="1040px">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="avatar" alt="avatar">
+                        <h6>Upload a different photo...</h6>
+                        <input type="file" class="form-insert">
+                    </div>
+                </div>
+                <div class="col-md-9 personal-info">
+                    <h3>Personal info</h3>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Full Name:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Email:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Gcash Account Name:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" placeholder="Gcash Account Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Gcash Account Number:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="number" placeholder="Gcash Account Number">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr width="1040px">
+        </div>
+      </body>
+
+    </div>
+
+    <!---Notifications-->
+    <div class="section-content" id="content-notifications" style="display: none;">
+    
+      <p>THIS IS NOTIFICATIONS</p>
+
+    </div>
+
+    <!---SETTINGS-->
+    <div class="section-content" id="content-settings" style="display: none;">
+    
+      <p>THIS IS SETTINGS</p>
+
+    </div>
+
+  </div>
+
+
+  <script type="module">
+
+    // Event delegation to handle navigation clicks
+    document.querySelector('.navigation ul').addEventListener('click', function(event) {     
+      
+      const anchor = event.target.closest('a');
+      if (anchor) {
+        const section = anchor.getAttribute('data-section');
+        navigate(section);
+      }
+        
+    });
+
+    function navigate(section) {
+
+    document.querySelectorAll('.section-content').forEach(section => {
+      section.style.display = 'none';
+    });
+
+    document.getElementById(section).style.display = "block";
+    }
+
+    //Initialize Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCDHcV6ZsdG6aAeuBs8cL5soQ_HnkwMX6U",
+      authDomain: "enhanced-e-collect-web-app.firebaseapp.com",
+      databaseURL: "https://enhanced-e-collect-web-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "enhanced-e-collect-web-app",
+      storageBucket: "enhanced-e-collect-web-app.appspot.com",
+      messagingSenderId: "983061759069",
+      appId: "1:983061759069:web:fde3270065ab8f912c79b4"
+    };
+
+    const app = initializeApp(firebaseConfig)
+    const auth = getAuth (app);
+
+    const logoutButton = document.getElementById("logout");
+
+    logoutButton.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      //Display confirmation pop-up
+      const confirmLogout = window.confirm("Are you sure you want to log out?");
+
+      //If user confirms logout
+      if (confirmLogout) {
+
+        //Call firebase sign-out function
+        auth.signOut().then(function() {
+          alert("Logged out successfully.");
+          window.location.href = "index.html";
+          }).catch(function(error) {
+          console.error("Error logging out:", error);
+          alert("Error logging out. Please try again.");
+          });
+      }     
+    });
+
+    
+
+    // add hovered class to selected list item
+    let list = document.querySelectorAll(".navigation li");
+
+    function activeLink() {
+      list.forEach((item) => {
+        item.classList.remove("hovered");
+      });
+      this.classList.add("hovered");
+    }
+
+    list.forEach((item) => item.addEventListener("mouseover", activeLink));
+
+    // Menu Toggle
+    let toggle = document.querySelector(".toggle");
+    let navigation = document.querySelector(".navigation");
+    let main = document.querySelector(".main");
+
+    toggle.onclick = function () {
+      navigation.classList.toggle("active");
+      main.classList.toggle("active");
+    };
+
+
+  </script>
+  
+</body>
+
+</html>
